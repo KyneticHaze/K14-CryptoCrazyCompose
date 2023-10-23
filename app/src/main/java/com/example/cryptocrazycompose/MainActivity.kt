@@ -11,6 +11,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.cryptocrazycompose.ui.theme.CryptoCrazyComposeTheme
 import com.example.cryptocrazycompose.util.Arguments
+import com.example.cryptocrazycompose.util.Routes
 import com.example.cryptocrazycompose.view.CryptoDetailsScreen
 import com.example.cryptocrazycompose.view.CryptoListScreen
 import dagger.hilt.android.AndroidEntryPoint
@@ -23,19 +24,18 @@ class MainActivity : ComponentActivity() {
             CryptoCrazyComposeTheme {
 
                 val navController = rememberNavController()
-                val cryptoListScreenId = "crypto_list_screen"
-                val cryptoDetailsScreenId = "crypto_details_screen/{${Arguments.cryptoId}}/{${Arguments.cryptoPrice}}"
+
 
                 NavHost(
                     navController = navController,
-                    startDestination = cryptoListScreenId) {
+                    startDestination = Routes.cryptoListScreenId) {
 
-                    composable(cryptoListScreenId) {
+                    composable(Routes.cryptoListScreenId) {
                         // CryptoListScreen
                         CryptoListScreen(navController = navController)
                     }
 
-                    composable(cryptoDetailsScreenId, arguments = listOf(
+                    composable(Routes.cryptoDetailsScreenId, arguments = listOf(
                         navArgument(Arguments.cryptoId) {
                             NavType.StringType
                         },
