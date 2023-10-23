@@ -50,6 +50,8 @@ class CryptoListViewModel @Inject constructor(
                     // loading görünümü yok
                     isLoading.value = false
                 }
+
+                else -> {}
             }
         }
     }
