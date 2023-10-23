@@ -84,6 +84,9 @@ dependencies {
     implementation ("androidx.hilt:hilt-work:1.0.0")
     implementation ("androidx.work:work-runtime-ktx:2.8.1")
 
+    // navigation-compose
+    implementation ("androidx.navigation:navigation-compose:2.7.4")
+
     // Retrofit
     implementation ("com.squareup.retrofit2:retrofit:$retrofitVersion")
     implementation ("com.squareup.retrofit2:converter-gson:$retrofitVersion")
