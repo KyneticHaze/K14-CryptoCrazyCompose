@@ -25,7 +25,6 @@ class MainActivity : ComponentActivity() {
 
                 val navController = rememberNavController()
 
-
                 NavHost(
                     navController = navController,
                     startDestination = Routes.cryptoListScreenId) {
