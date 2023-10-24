@@ -57,6 +57,7 @@ val lifecycleVersion = "2.6.2"
 val timberVersion = "5.0.1"
 val coilVersion = "2.4.0"
 val okhttp3Version = "5.0.0-alpha.2"
+val navVersion = "2.7.4"
 
 dependencies {
 
@@ -85,7 +86,7 @@ dependencies {
     implementation ("androidx.work:work-runtime-ktx:2.8.1")
 
     // navigation-compose
-    implementation ("androidx.navigation:navigation-compose:2.7.4")
+    implementation ("androidx.navigation:navigation-compose:$navVersion")
 
     // Retrofit
     implementation ("com.squareup.retrofit2:retrofit:$retrofitVersion")
