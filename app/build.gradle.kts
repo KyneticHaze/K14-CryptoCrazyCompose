@@ -55,7 +55,7 @@ val hiltVersion = "2.48.1"
 val retrofitVersion = "2.9.0"
 val lifecycleVersion = "2.6.2"
 val timberVersion = "5.0.1"
-val coilVersion = "2.2.2"
+val coilVersion = "2.4.0"
 val okhttp3Version = "5.0.0-alpha.2"
 
 dependencies {
